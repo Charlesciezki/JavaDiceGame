@@ -4,9 +4,14 @@ import java.util.*;
 
 public class CreateGameBoard {
 	String obstacle;
-	ArrayList<String> gameSpace = new ArrayList<>();
+	public ArrayList<String> gameSpace = new ArrayList<>();
+	
+	
 	
 	public void populateGameBoard() {
+		
+		
+	
 		for (int gamespace = 1; gamespace <= 9; gamespace++) {
 			double space;
 			space = Math.floor((Math.random() * 4) + 1);
@@ -25,9 +30,21 @@ public class CreateGameBoard {
 			gameSpace.add(obstacle);
 		}
 		gameSpace.add("Mountain");
-		System.out.print(gameSpace);
+		System.out.println(gameSpace);
+		
+		for (int i=0; i < gameSpace.size(); i++){
+			//System.out.println(gameSpace.get(i));
+			
+		
+		}
+			//ObstacleTest obstacleTest = new ObstacleTest();
+			//obstacleTest.passObstacleRoll(gameBoard.);
+			
 	}
+
+
 }
+
 	
 	
 

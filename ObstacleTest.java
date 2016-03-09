@@ -2,9 +2,16 @@ package diceGame;
 import java.util.*;
 
 
-public class ObstacleTest {
-	double diceRoll = Math.floor(Math.random()* 20 + 1);
-		public void passObstacleRoll(/*playerRoll*/){
+public class ObstacleTest extends CreateGameBoard{
+	String obstacle;
+	//ArrayList<String> gameSpace = new ArrayList<>();
+	int playerScore = 0;
+	double playerRoll = Math.floor(Math.random()* 20 + 1);
+		
+	public void passObstacleRoll(ArrayList gameSpace){
+		System.out.println("This is from obstacle class" + gameSpace);
+			PlayerTurn takePlayerTurn = new PlayerTurn();
+				takePlayerTurn.GivePlayerTurn(gameSpace);
 			
 		}
 		public void smallRock(/*playerRoll*/){
@@ -52,4 +59,7 @@ public class ObstacleTest {
 				playerScore ++;
 			}
 		}
+	
+		
 }
+
