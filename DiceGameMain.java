@@ -9,7 +9,6 @@ public class DiceGameMain {
 
 		ObstacleTest test = new ObstacleTest();
 		test.passObstacleRoll(gameBoard.gameSpace);
-		//System.out.println(gameBoard.gameSpace);
 	}
 }
 
