@@ -1,16 +1,24 @@
 import javax.print.attribute.standard.Sides;
+import java.util.Random;
+
 
 public class Dice {
 
+    public int playerRoll;
     public int value;
     public Dice(){
-        value = 0;
     }
 
-    public void playerRoll(int maxValue) {
-        double tempValue = Math.random() * maxValue;
-        value = (int) Math.floor(tempValue) + 1;
+    public int playerRoll(int num) {
+
+        value = (int) (Math.random() * num) + 1;
+        System.out.println("This is it " + value);
+        return playerRoll;
     }
+
+
+
+    //public abstract void playerRoll(;
 
 
 

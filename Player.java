@@ -36,8 +36,12 @@ public class Player extends Dice {
         return playerRoll;
     }
 
-    @Override
-    public void playerRoll(int maxValue) {
-        super.playerRoll(maxValue);
+
+    public int playerRoll(int num){
+
+        value = (int) (Math.random() * num) + 1;
+        System.out.println("This is it " + value);
+        return playerRoll;
     }
+
 }
