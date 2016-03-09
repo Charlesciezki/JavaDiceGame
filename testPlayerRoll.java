@@ -6,14 +6,15 @@ public class testPlayerRoll {
         Scanner in = new Scanner(System.in);
         Player player1 = new Player();
         Dice dice = new Dice();
+        GamePlay gamePlay = new GamePlay();
 
-        System.out.println("Please enter your Name to play");
+
 
         player1.setName(in.nextLine());
 
-        GamePlay gamePlay = new GamePlay();
 
-        System.out.println(gamePlay.printMenu());
+
+        gamePlay.printMenu();
 
         System.out.println("Welcome to this random ass dice game: " + player1.getName());
 
@@ -21,7 +22,7 @@ public class testPlayerRoll {
 
         int num = in.nextInt();
 
-        System.out.println("You are going to roll a 20 sided die");// +
+        System.out.println("You are going to roll a " + num + " sided die");// +
         player1.playerRoll(num);
 
 

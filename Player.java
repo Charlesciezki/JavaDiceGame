@@ -1,3 +1,7 @@
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Player extends Dice {
 
@@ -40,7 +44,7 @@ public class Player extends Dice {
     public int playerRoll(int num){
 
         value = (int) (Math.random() * num) + 1;
-        System.out.println("This is it " + value);
+        System.out.println("You rolled a " + value);
         return playerRoll;
     }
 

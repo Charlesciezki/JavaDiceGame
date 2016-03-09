@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class GamePlay {
@@ -5,12 +7,10 @@ public class GamePlay {
 
     private String menu;
 
+    Scanner in = new Scanner(System.in);
 
-    public GamePlay() {
 
-    }
-
-    public String printMenu() {
+    public void printMenu() {
 
         System.out.println("You have chosen to play the dice obstacle game!");
         System.out.println("");
@@ -22,8 +22,22 @@ public class GamePlay {
         System.out.println("3.)**You move ahead when you defeat the obstacle with a roll");
         System.out.println("");
         System.out.println("The board is 10 spaces so it should be a piece of cake");
-        return menu;
+
     }
+
+    public GamePlay() {
+
+        List<String> players = new ArrayList<>();
+        System.out.println("Please enter player 1: \n");
+        players.add(in.nextLine());
+        System.out.println("Please enter player 2: \n");
+        players.add(in.nextLine());
+    }
+
+
+
+
+
 
 
 }
