@@ -1,19 +1,22 @@
-
+import javax.print.attribute.standard.Sides;
 
 public class Dice {
 
-    private int d4;
-    private int d6;
-    private int d8;
-    private int d10;
-    private int d12;
-    private int d20;
-    private int numRolls;
-
+    public int value;
     public Dice(){
-
+        value = 0;
     }
 
+    public void playerRoll(int maxValue) {
+        double tempValue = Math.random() * maxValue;
+        value = (int) Math.floor(tempValue) + 1;
+    }
+
+
+
+
+
+/*
     public void rollD4(){
         System.out.println("Four Sided Dice Roll: ");
         d4 = (int)(Math.random() * 4) + 1;
@@ -49,4 +52,37 @@ public class Dice {
         d20 = (int)(Math.random() * 20) + 1;
         System.out.print("With the Twenty sided die you rolled a " + d20);
     }
+
+    public int getD4Roll(int D4){
+        return d4;
+    }
+
+    public int getD6Roll(int D6){
+        return d6;
+    }
+
+    public int getD8Roll(int D8){
+        return d8;
+    }
+
+    public int getD10Roll(int D10){
+        return d10;
+    }
+
+    public int getD12Roll(int D12){
+        return d12;
+    }
+
+    public int getD20Roll(int D20){
+        return d20;
+    }
+
+    public int getNumRolls(){
+        return numRolls;
+    }
+
+*/
+
+
+
 }
