@@ -2,10 +2,9 @@ package diceGame;
 
 import java.util.*;
 
-public class CreateGameBoard {
+public class CreateGameBoard /*extends Player*/{
 	String obstacle;
 	public ArrayList<String> gameSpace = new ArrayList<>();
-	
 	
 	
 	public void populateGameBoard() {
@@ -32,13 +31,6 @@ public class CreateGameBoard {
 		gameSpace.add("Mountain");
 		System.out.println(gameSpace);
 		
-		for (int i=0; i < gameSpace.size(); i++){
-			//System.out.println(gameSpace.get(i));
-			
-		
-		}
-			//ObstacleTest obstacleTest = new ObstacleTest();
-			//obstacleTest.passObstacleRoll(gameBoard.);
 			
 	}
 
