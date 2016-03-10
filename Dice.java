@@ -12,7 +12,7 @@ public class Dice {
     public int playerRoll(int num) {
 
         value = (int) (Math.random() * num) + 1;
-        System.out.println("This is it " + value);
+        //System.out.println("This is it " + value);
         return playerRoll;
     }
 
